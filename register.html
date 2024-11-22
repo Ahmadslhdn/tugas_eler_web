@@ -7,55 +7,65 @@
   <link href="bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {
-      background-color: #f4f7fc;
+      background: url('image/landing_page.jpg') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
     }
-
     .register-box {
-      max-width: 400px;
-      margin: 0 auto;
+      max-width: 500px;
       padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.65);
+      background-color: #fff;
     }
-
     .register-box h2 {
-      margin-bottom: 20px;
-      font-weight: bold;
       text-align: center;
+      margin-bottom: 20px;
     }
-
+    .form-control {
+      height: 40px;
+      font-size: 1rem;
+    }
     .btn-primary {
       width: 100%;
-    }
-
-    .form-label {
-      font-weight: 600;
+      font-size: 1.1rem;
+      padding: 10px;
     }
   </style>
 </head>
 <body>
-  <div class="container mt-5">
-    <div class="register-box">
-      <h2>Register</h2>
-      <form action="login.html" method="POST">
-        <div class="mb-3">
-          <label for="username" class="form-label">Username</label>
-          <input type="text" class="form-control" id="username" name="username" required>
-        </div>
-        <div class="mb-3">
-          <label for="email" class="form-label">Email</label>
-          <input type="email" class="form-control" id="email" name="email" required>
-        </div>
-        <div class="mb-3">
-          <label for="password" class="form-label">Password</label>
-          <input type="password" class="form-control" id="password" name="password" required>
-        </div>
-        <button type="submit" class="btn btn-primary">Register</button>
-      </form>
-      <p class="mt-3 text-center">Already have an account? <a href="login.html">Login</a></p>
-      <p class="mt-3 text-center"><a href="landing_page.html">Back</a></p>
-    </div>
+  <div class="register-box">
+    <h2>Register</h2>
+    <form id="registerForm">
+      <div class="mb-4">
+        <label for="username" class="form-label">Username</label>
+        <input type="text" class="form-control" id="username" required>
+      </div>
+      <div class="mb-4">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control" id="password" required>
+      </div>
+      <button type="button" class="btn btn-primary" onclick="registerUser()">Register</button>
+    </form>
+    <p class="mt-3 text-center">Already have an account? <a href="login.html">Login</a></p>
   </div>
+
+  <script>
+    function registerUser() {
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+
+      // Simpan username dan password di localStorage
+      localStorage.setItem('username', username);
+      localStorage.setItem('password', password);
+
+      alert("Registration successful!");
+      window.location.href = "login.html"; // Pindah ke halaman login setelah registrasi
+    }
+  </script>
 </body>
 </html>
