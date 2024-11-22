@@ -5,6 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dashboard</title>
   <link href="bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style/dashboard.css">
+
+  <style>
+    /* CSS untuk sembunyikan konten */
+    .hidden {
+      display: none;
+    }
+  </style>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-info">
@@ -20,47 +28,153 @@
 
   <div class="row">
     <div class="col-md-11">
-      <h4>Data Diri</h4>
-      <p>Saya adalah mahasiswa Universitar Teknologi Bandung dari Fakultas Industri Kreatif Program Studi Teknik Informatika 
-          yang sedang menempuh semester 5. Saya juga seorang karyawan di salah satu perusahaan yang bergerak dibidang Manufaktur 
-        yaitu PT Kinenta Indonesia yang beralamat di Desa Cikumpay Kec. Campaka Kab. Purwakarta Jawa Barat</p>
-
+      <h4>Sejarah Perusahaan</h4>
+      <p id="sejarah-summary">
+        PT Sholhud Elektronik Center didirikan pada tahun 2010 dengan visi untuk menjadi penyedia solusi elektronik yang andal dan 
+        inovatif di Indonesia. Berawal dari sebuah toko kecil di pusat kota, perusahaan ini awalnya hanya menjual produk elektronik 
+        rumah tangga seperti televisi, kulkas, dan mesin cuci. Melalui komitmen pada kualitas dan pelayanan pelanggan, 
+        PT Sholhud Elektronik Center mulai dikenal sebagai tempat terpercaya untuk memenuhi kebutuhan elektronik.
+      </p>
+      <div id="sejarah-detail" class="hidden">
         <p>
-          Saya berasal dari Subang Tepatnya Desa Pasanggrahan RT/RW 25/08 Kec. Kasomalang Kab. SUbang Jawa Barat
+          Pada tahun 2015, perusahaan memperluas operasinya dengan membuka cabang baru di beberapa kota besar di Indonesia. 
+          Selain itu, lini produk juga diperluas mencakup gadget seperti smartphone, laptop, dan perangkat audio visual. 
+          Langkah ini menjadikan PT Sholhud Elektronik Center semakin relevan di era digital, menjangkau pasar yang lebih luas, 
+          termasuk perkantoran dan bisnis kecil hingga menengah.
         </p>
+        <p>
+          Seiring dengan perkembangan teknologi, pada tahun 2018 perusahaan mulai fokus pada pemasaran online dengan meluncurkan 
+          website resmi dan bekerja sama dengan berbagai platform e-commerce. Langkah ini diikuti dengan inovasi layanan purna jual, 
+          seperti instalasi perangkat dan perbaikan elektronik, yang menjadi salah satu keunggulan perusahaan dalam memberikan nilai 
+          tambah bagi pelanggan.
+        </p>
+        <p>
+          Hingga saat ini, PT Sholhud Elektronik Center terus tumbuh menjadi salah satu pemain utama di industri elektronik Indonesia, 
+          dengan lebih dari 10 cabang dan ribuan pelanggan setia. Dengan semangat inovasi dan pelayanan terbaik, perusahaan berkomitmen 
+          untuk menghadirkan produk dan layanan yang dapat mendukung kebutuhan teknologi masyarakat modern.
+        </p>
+      </div>
+      <button class="btn btn-primary btn-sm toggle-detail" data-target="sejarah-detail">Selengkapnya</button>
     </div>
   </div>
-  
+
   <div class="row">
     <div class="col-md-4">
-      <h4>Web Programing</h4>
-      <p>Pemrograman web adalah proses pengembangan aplikasi yang beroperasi di web browser atau server untuk membangun dan mengelola interaksi antara pengguna dan website. Pemrograman web merupakan cabang ilmu dari pemrograman komputer yang mengimplementasikan konsep pemrograman di dunia web. 
-        Pemrograman web erat kaitannya dengan internet dan website, karena merupakan proses pembuatan website untuk keperluan internet.</p>
+      <h4>Profil Perusahaan</h4>
+      <p>Nama Perusahaan: PT Sholhud Elektronik Center<br>
+        Bidang Usaha: Elektronik<br>
+        <strong>Visi:</strong> Menjadi perusahaan terpercaya dalam penyediaan produk dan layanan elektronik berkualitas tinggi.
+        <br><strong>Misi:</strong><br>
+        - Menyediakan produk elektronik inovatif dan berkualitas.<br>
+        - Memberikan layanan pelanggan yang profesional dan memuaskan.<br>
+        - Berkontribusi pada pertumbuhan teknologi di Indonesia.<br>
+        - Membangun kemitraan strategis dengan produsen dan distributor elektronik terkemuka.<br>
+        <strong>Layanan dan Produk:</strong><br>
+        - Penjualan alat elektronik rumah tangga.<br>
+        - Penjualan gadget dan aksesori elektronik.<br>
+        - Servis dan perbaikan elektronik.<br>
+        - Konsultasi dan instalasi perangkat elektronik.<br>
+        <strong>Keunggulan Kami:</strong><br>
+        - Produk bergaransi resmi.<br>
+        - Teknisi berpengalaman dan tersertifikasi.<br>
+        - Dukungan pelanggan 24/7.<br>
+        - Berfokus pada kepuasan pelanggan dan keandalan layanan.<br>
+        <strong>Alamat dan Kontak:</strong><br>
+        Alamat: Jl. Raya Elektronik No. 123, Kota Elektronika, Indonesia<br>
+        Telepon: +62 812 3456 7890<br>
+        Email: info@sholhudelectronic.com<br>
+        Website: www.sholhudelectronic.com<br>
+        <strong>Sosial Media:</strong><br>
+        Instagram: @sholhudelectronic<br>
+        Facebook: Sholhud Elektronik Center<br>
+        Twitter: @sholhud_electro<br>
+        Moto Perusahaan: "Inovasi Elektronik, Hidup Lebih Mudah."<br></p>
     </div>
   
     <div class="col-md-4">
-      <h4>Mobile Programing</h4>
-      <p>Pemrograman mobile adalah proses pembuatan aplikasi atau perangkat lunak yang dirancang untuk berjalan pada perangkat mobile, seperti ponsel, tablet, dan asisten digital. 
-        Dalam pemrograman mobile, programmer menggunakan bahasa pemrograman yang dirancang untuk perangkat mobile. Salah satu bahasa pemrograman yang populer untuk pengembangan aplikasi Android adalah Java. 
-        </p>
-    </div>
-  
-    <div class="col-md-4">
-      <h4>Web Programing</h4>
-      <p>Full stack developer adalah seorang profesional teknologi yang memiliki keahlian untuk bekerja pada berbagai lapisan pengembangan perangkat lunak, termasuk front end dan back end
-        Full stack developer harus memiliki pemahaman yang luas tentang berbagai teknologi, bahasa pemrograman, dan kerangka kerja. Mereka juga harus mampu mengkomunikasikan berbagai hal seperti tujuan dan pengembangan project.
+      <h4>Target Pasar</h4>
+      <p>
+        PT Sholhud Elektronik Center menargetkan pasar yang terdiri dari berbagai segmen, yaitu rumah tangga, 
+        perkantoran, dan pelanggan online. Untuk segmen rumah tangga, perusahaan menawarkan produk unggulan seperti 
+        televisi, kulkas, AC, mesin cuci, dan perangkat elektronik lainnya, dengan strategi promosi berupa diskon bundling, 
+        cicilan 0%, dan garansi produk jangka panjang. Bagi perkantoran dan bisnis, fokus utama adalah produk seperti mesin 
+        fotokopi, laptop, dan AC kantor, dengan layanan tambahan berupa konsultasi, instalasi profesional, serta kontrak 
+        perawatan rutin. Sementara itu, untuk pelanggan online, perusahaan memanfaatkan e-commerce dengan menawarkan promosi 
+        cashback, pengiriman gratis, dan diskon eksklusif. 
       </p>
+      <p>
+        Strategi pemasaran menggabungkan digital marketing melalui iklan di media sosial, SEO untuk website perusahaan, 
+        serta program referral dan ulasan pelanggan untuk meningkatkan kepercayaan. Selain itu, PT Sholhud Elektronik Center 
+        juga aktif dalam promosi offline seperti pameran dan kemitraan dengan toko fisik untuk memperluas jangkauan produk. 
+        Program loyalitas pelanggan seperti membership dengan diskon khusus dan poin reward setiap pembelian juga diterapkan 
+        untuk mendorong pembelian ulang. Tak hanya itu, perusahaan memberikan edukasi kepada pelanggan melalui blog, video 
+        tutorial, dan webinar tentang penggunaan produk dan tren teknologi terbaru.
+      </p>
+      <p>
+        Target penjualan tahunan yang ingin dicapai adalah Rp 1,25 miliar, dengan pembagian Rp 200 juta di kuartal pertama, 
+        Rp 300 juta di kuartal kedua, Rp 350 juta di kuartal ketiga, dan Rp 400 juta di kuartal keempat. Dengan strategi pemasaran 
+        yang terintegrasi dan fokus pada kepuasan pelanggan, PT Sholhud Elektronik Center optimis dapat mencapai target tersebut 
+        sekaligus memperluas pangsa pasarnya.
+      </p>
+    </div>
+  
+    <div class="col-md-4">
+      <h4>Produk yang Ditawarkan</h4>
+      <p>
+        PT Sholhud Elektronik Center menawarkan berbagai produk elektronik berkualitas untuk memenuhi kebutuhan rumah tangga, 
+        perkantoran, dan konsumsi pribadi. Di sektor elektronik rumah tangga, perusahaan menyediakan televisi LED, Smart TV, 
+        dan OLED dari merek terkemuka seperti Samsung, LG, dan Sony. Selain itu, terdapat kulkas berbagai tipe, termasuk kulkas 
+        satu dan dua pintu, serta kulkas side-by-side dari merek seperti Panasonic dan Sharp. AC, mesin cuci, setrika, serta 
+        blender dan juicer juga tersedia dalam berbagai pilihan untuk memudahkan aktivitas sehari-hari di rumah. </p>
+
+    <p>Untuk perangkat elektronik konsumen, PT Sholhud Elektronik Center menawarkan smartphone dan tablet dari merek seperti Apple, 
+        Samsung, dan Xiaomi, serta laptop dari ASUS, Lenovo, dan HP, yang cocok untuk kebutuhan bisnis, gaming, dan desain. 
+        Produk audio seperti headphone dan earphone dari Sony, JBL, dan Sennheiser, serta kamera digital dari Canon dan Nikon, 
+        juga tersedia untuk mendukung gaya hidup modern. Smartwatch dan fitness tracker dari Apple dan Fitbit melengkapi rangkaian 
+        produk yang mendukung gaya hidup sehat dan terhubung.
+    </p>
+
+    <p>
+        Selain itu, untuk elektronik perkantoran, perusahaan menyediakan mesin fotokopi, printer, serta proyektor dan sistem audio 
+        untuk kebutuhan ruang rapat dan konferensi. Berbagai peralatan elektronik kecil dan aksesoris, seperti power bank, charger cepat, 
+        lampu LED, dan aksesoris komputer, juga dapat ditemukan di PT Sholhud Elektronik Center, menawarkan kenyamanan dan efisiensi dalam 
+        penggunaan perangkat sehari-hari.
+    </p>
+
+    <p>
+        Tak hanya produk, PT Sholhud Elektronik Center juga menyediakan layanan purna jual yang meliputi perbaikan elektronik, 
+        instalasi perangkat, serta program garansi dan perpanjangan garansi untuk memastikan kepuasan dan perlindungan lebih 
+        lama bagi setiap pelanggan.
+    </p>
     </div>
   </div>
   
   <div class="row" style="background: aqua; color: black;">
     <div class="col-md-12">
       <p>Terma Kasih, Semoga bermanfaat</p>
+      <footer class="footer">
+        @Copyright by 22552011326_Ahmad Solehudin_TIF 222 W
+      </footer>
     </div>
   </div>
 
   <script language="javascript">
-    alert("Terima Kasih Sudah Login")
+    // Fungsi untuk toggle visibility
+    const toggleButton = document.querySelector('.toggle-detail');
+    const detailSection = document.getElementById(toggleButton.getAttribute('data-target'));
+
+    toggleButton.addEventListener('click', function () {
+      if (detailSection.classList.contains('hidden')) {
+        detailSection.classList.remove('hidden');
+        toggleButton.textContent = 'Tutup';
+      } else {
+        detailSection.classList.add('hidden');
+        toggleButton.textContent = 'Selengkapnya';
+      }
+    });
+
+    // Alert login
+    alert("Terima Kasih Sudah Login");
   </script>
 </body>
 </html>
